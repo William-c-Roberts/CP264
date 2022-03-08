@@ -1,0 +1,164 @@
+--------------Testing replace_char --------------
+
+Case 1: Replacing a with _
+Number of matches = 90
+In Engl_nd, there w_s sc_rcely _n _mount of order _nd protection to justify much n_tion_l bo_sting. 
+D_ring burgl_ries by _rmed men, _nd highw_y robberies, took pl_ce in the c_pit_l itself every night; 
+f_milies were publicly c_utioned not to go out of town without removing their furniture to 
+upholsterers' w_rehouses for security; the highw_ym_n in the d_rk w_s _ City tr_desm_n in the light, 
+_nd, being recognised _nd ch_llenged by his fellow-tr_desm_n whom he stopped in his ch_r_cter of "the C_pt_in," 
+g_ll_ntly shot him through the he_d _nd rode _w_y; the m_il w_s w_yl_id by seven robbers, 
+_nd the gu_rd shot three de_d, _nd then got shot de_d himself by the other four, "in consequence of 
+the f_ilure of his _mmunition: "_fter which the m_il w_s robbed in pe_ce; th_t m_gnificent potent_te, 
+the Lord M_yor of London, w_s m_de to st_nd _nd deliver on Turnh_m Green, by one highw_ym_n, who despoiled 
+the illustrious cre_ture in sight of _ll his retinue; prisoners in London g_ols fought b_ttles with their 
+turnkeys, _nd the m_jesty of the l_w fired blunderbusses in _mong them, lo_ded with rounds of shot _nd b_ll; 
+thieves snipped off di_mond crosses from the necks of noble lords _t Court dr_wing-rooms; musketeers went 
+into St. Giles's, to se_rch for contr_b_nd goods, _nd the mob fired on the musketeers, 
+_nd the musketeers fired on the mob, _nd nobody thought _ny of these occurrences much out of the common w_y.
+
+Case 2: Replacing g with $
+Number of matches = 28
+In En$land, there was scarcely an amount of order and protection to justify much national boastin$. 
+Darin$ bur$laries by armed men, and hi$hway robberies, took place in the capital itself every ni$ht; 
+families were publicly cautioned not to $o out of town without removin$ their furniture to 
+upholsterers' warehouses for security; the hi$hwayman in the dark was a City tradesman in the li$ht, 
+and, bein$ reco$nised and challen$ed by his fellow-tradesman whom he stopped in his character of "the Captain," 
+$allantly shot him throu$h the head and rode away; the mail was waylaid by seven robbers, 
+and the $uard shot three dead, and then $ot shot dead himself by the other four, "in consequence of 
+the failure of his ammunition: "after which the mail was robbed in peace; that ma$nificent potentate, 
+the Lord Mayor of London, was made to stand and deliver on Turnham $reen, by one hi$hwayman, who despoiled 
+the illustrious creature in si$ht of all his retinue; prisoners in London $aols fou$ht battles with their 
+turnkeys, and the majesty of the law fired blunderbusses in amon$ them, loaded with rounds of shot and ball; 
+thieves snipped off diamond crosses from the necks of noble lords at Court drawin$-rooms; musketeers went 
+into St. $iles's, to search for contraband $oods, and the mob fired on the musketeers, 
+and the musketeers fired on the mob, and nobody thou$ht any of these occurrences much out of the common way.
+
+Case 3: Replacing N with *
+Number of matches = 87
+I* E*gla*d, there was scarcely a* amou*t of order a*d protectio* to justify much *atio*al boasti*g. 
+Dari*g burglaries by armed me*, a*d highway robberies, took place i* the capital itself every *ight; 
+families were publicly cautio*ed *ot to go out of tow* without removi*g their fur*iture to 
+upholsterers' warehouses for security; the highwayma* i* the dark was a City tradesma* i* the light, 
+a*d, bei*g recog*ised a*d challe*ged by his fellow-tradesma* whom he stopped i* his character of "the Captai*," 
+galla*tly shot him through the head a*d rode away; the mail was waylaid by seve* robbers, 
+a*d the guard shot three dead, a*d the* got shot dead himself by the other four, "i* co*seque*ce of 
+the failure of his ammu*itio*: "after which the mail was robbed i* peace; that mag*ifice*t pote*tate, 
+the Lord Mayor of Lo*do*, was made to sta*d a*d deliver o* Tur*ham Gree*, by o*e highwayma*, who despoiled 
+the illustrious creature i* sight of all his reti*ue; priso*ers i* Lo*do* gaols fought battles with their 
+tur*keys, a*d the majesty of the law fired blu*derbusses i* amo*g them, loaded with rou*ds of shot a*d ball; 
+thieves s*ipped off diamo*d crosses from the *ecks of *oble lords at Court drawi*g-rooms; musketeers we*t 
+i*to St. Giles's, to search for co*traba*d goods, a*d the mob fired o* the musketeers, 
+a*d the musketeers fired o* the mob, a*d *obody thought a*y of these occurre*ces much out of the commo* way.
+
+Case 4: Error scenarios:
+Error (remove_letter): invalid input characters
+Number of matches = -1
+Error (remove_letter): invalid input characters
+Number of matches = -1
+Error (remove_letter): unable to open file nothing.txt
+Number of matches = -1
+
+--------------End of Testing replace_char --------------
+
+--------------Testing update_array --------------
+
+Case 1: size = 6, multiplier = 2
+Array Before update:
+[ 10 , 20 , 30 , 40 , 50 , 60 ]
+Array after update:
+[ 10 , 10 , 20 , 20 , 30 , 30 , 40 , 40 , 50 , 50 , 60 , 60 ]
+
+Case 2: size = 4, multiplier = 3
+Array Before update:
+[ 10 , 20 , 30 , 40 ]
+Array after update:
+[ 10 , 10 , 10 , 20 , 20 , 20 , 30 , 30 , 30 , 40 , 40 , 40 ]
+
+Case 3: size = 10, multiplier = 1
+Array Before update:
+[ 10 , 20 , 30 , 40 , 50 , 60 , 70 , 80 , 90 , 100 ]
+Array after update:
+[ 10 , 20 , 30 , 40 , 50 , 60 , 70 , 80 , 90 , 100 ]
+
+Case 4: size = 5, multiplier = 0
+Array Before update:
+[ 10 , 20 , 30 , 40 , 50 ]
+Error (update_array): invalid multiplier
+Array after update:
+[ 10 , 20 , 30 , 40 , 50 ]
+
+--------------End of Testing update_array --------------
+
+------------ Testing sentence_to_words --------------
+
+Case 1: sentence with 2 words:
+sentence = Good luck!
+This is a multi-word sentence:
+word 1: Good
+word 2: luck!
+last word is: luck!
+
+Case 2: sentence with 1 word:
+sentence = Fantastic!
+This is a single word sentence
+word: Fantastic!
+last word is: Fantastic!
+
+Case 3: sentence with 5 words:
+sentence = Best wishes for the midterm
+This is a multi-word sentence:
+word 1: Best
+word 2: wishes
+word 3: for
+word 4: the
+word 5: midterm
+last word is: midterm
+
+Case 4: empty sentence:
+sentence = 
+This is an empty sentence
+No words found
+last word is: 
+
+Case 5: NULL sentence:
+Error (sentence_to_words): invalid input
+last word is: 
+
+----------- End of Testing sentence_to_words --------------
+
+------------ Testing update_pointers --------------
+
+Case 1:
+[ 10.20 , 7.30 , 5.60 , 9.80 , 11.20 , 7.50 ]
+Before:         p1 = 10.20 , p2 = 7.50
+Using mode 'a': p1 =  5.60 , p2 = 11.20
+Using mode 'z': p1 = 11.20 , p2 = 5.60
+
+Case 2:
+[ 10.20 , 7.30 , 5.60 , 9.80 ]
+Before:         p1 = 10.20 , p2 = 9.80
+Using mode 'a': p1 =  5.60 , p2 = 10.20
+Using mode 'z': p1 = 10.20 , p2 = 5.60
+
+Case 3:
+[ 10.20 , 7.30 , 5.60 , 9.80 , 11.20 , 7.50 , 3.70 , 11.10 , 5.80 , 9.10 ]
+Before:         p1 = 10.20 , p2 = 9.10
+Using mode 'a': p1 =  3.70 , p2 = 11.20
+Using mode 'z': p1 = 11.20 , p2 = 3.70
+
+Case 4:
+[ 10.20 ]
+Before:         p1 = 10.20 , p2 = 10.20
+Using mode 'a': p1 = 10.20 , p2 = 10.20
+Using mode 'z': p1 = 10.20 , p2 = 10.20
+
+Case 5: Error cases:
+Error (update_pointers): Null array
+Error (update_pointers): invalid size
+Error (update_pointers): invalid mode
+Error (update_pointers): invalid pointer
+Error (update_pointers): invalid pointer
+
+----------- End of Testing update_pointers --------------
+

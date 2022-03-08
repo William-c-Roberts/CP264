@@ -1,0 +1,1 @@
+validator.o: ../validator.c

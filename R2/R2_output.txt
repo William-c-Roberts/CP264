@@ -1,0 +1,56 @@
+Start: Testing factorial
+Error(factorial): Invalid input
+Factorial(-1) = 0
+Factorial(0) = 1
+Factorial(1) = 1
+Factorial(2) = 2
+Factorial(3) = 6
+Factorial(14) = 1278945280
+End: Testing factorial
+------------------------------
+Start: Testing solve
+[r = 5, y = 4, x = 10, b = 2] --> a = 8.0
+[r = 0, y = 1, x = 2, b = 3] --> a = -10.0
+End: Testing solve
+------------------------------
+Start: Testing is_double
+is_double(1.20) --> 1
+is_double(1.00) --> 0
+is_double(5.50) --> 1
+is_double(6.00) --> 0
+End: Testing is_double
+------------------------------
+Start: Testing is_fraction
+is_fraction(0.20) --> 1
+is_fraction(3.00) --> 0
+is_fraction(0.33) --> 1
+is_fraction(2.05) --> 0
+End: Testing is_fraction
+------------------------------
+Start: Testing get_month
+Enter month number(1-12): 0
+Invalid input!
+Enter month number(1-12): 1
+31 days
+Enter month number(1-12): 2
+28/29 days
+Enter month number(1-12): 4
+30 days
+End: Testing get_month
+------------------------------
+Start: Testing classify_num1
+18 -->This is an even positive number
+17 -->This is an odd positive number
+-11 -->This is an odd negative number
+-12 -->This is an even negative number
+0 -->This is an even negative number
+End: Testing classify_num1
+------------------------------
+Start: Testing classify_num2
+18 -->This is an even positive number
+17 -->This is an odd positive number
+-11 -->This is an odd negative number
+-12 -->This is an even negative number
+0 -->This is a zero!
+End: Testing classify_num2
+------------------------------

@@ -1,0 +1,140 @@
+Start: Testing calculate_cost:
+
+House Drawing dimensions (meters):
+BH = 15.000   BL = 23.000  
+RH = 8.000   
+DH = 5.000    DL = 3.000   
+
+House dimensions (square meter):
+Door area =   15.000
+Base area =  330.000
+Roof area =   92.000
+
+House cost (CAD):
+Door cost = $ 130.950
+Base cost = $27980.700
+Roof cost = $1095.720
+--------------------
+Total cost = $29207.370
+
+House Drawing dimensions (meters):
+BH = 9.020    BL = 14.300  
+RH = 5.280   
+DH = 4.000    DL = 2.110   
+
+House dimensions (square meter):
+Door area =    8.440
+Base area =  120.546
+Roof area =   37.752
+
+House cost (CAD):
+Door cost = $  73.681
+Base cost = $10221.096
+Roof cost = $ 449.626
+--------------------
+Total cost = $10744.404
+
+End: Testing calculate_cost
+------------------------------
+
+Start: Testing find_promotion:
+
+Ticket# VIP--1: Error(find_promotion): Invalid input - Code# -99
+
+find_promotion(10,'U'):
+Ticket# 10: Error(find_promotion): Invalid input - Code# -99
+
+find_promotion(15,'N'):
+Ticket# 15: No Promotion - Code# 0
+
+find_promotion(60,'N'):
+Ticket# 60: No Promotion - Code# 0
+
+find_promotion(30,'Y'):
+Ticket# VIP-30: Level 1 Promotion - Code# 130
+
+find_promotion(40,'N'):
+Ticket# 40: Level 2 Promotion - Code# 240
+
+find_promotion(200,'N'):
+Ticket# 200: Silver Promotion - Code# 700
+
+find_promotion(110,'Y'):
+Ticket# VIP-110: Gold Promotion - Code# 1110
+
+find_promotion(500,'N'):
+Ticket# 500: Special Promotion - Code# 3333
+
+End: Testing find_promotion
+------------------------------
+
+Start: Testing mini_calculator:
+
+3 # 5 = -99
+10 # 0 = -99
+
+3 + 5 = 8
+10 + 0 = 10
+
+3 - 5 = -2
+10 - 0 = 10
+
+3 * 5 = 15
+10 * 0 = 0
+
+5 / 2 = 2
+3 / 5 = 0
+10 / 0 = -99
+
+5 % 2 = 1
+3 % 5 = 3
+10 % 0 = -99
+10 % -2 = -5
+-100 % 7 = -14
+
+5 ^ 3 = 125
+3 ^ -5 = -99
+10 ^ 0 = 1
+0 ^ 0 = 1
+0 ^ 3 = 0
+
+End: Testing mini_calculator
+------------------------------
+
+Start: Testing mini_calculator2:
+
+3 # 5 = ERROR
+
+3 + 5 = 8
+32767 + 32767 = 65534
+-32767 + 0 = -32767
+
+3 - 5 = -2
+-32768 - 32767 = -65535
+-32768 - 1 = -32769
+
+3 * 5 = 15
+32767 * 32767 = 1073676289
+32767 * -32768 = -1073709056
+
+5 / 2 = 2.5000
+1 / 3 = 0.3333
+10 / 0 = ERROR
+
+5 % 2 = 1
+3 % 5 = 3
+10 % 0 = ERROR
+10 % -2 = 0
+-100 % 7 = -2
+
+5 ^ 3 = 125
+3 ^ -5 = 0.0041
+10 ^ 0 = 1
+0 ^ 0 = 1
+0 ^ 3 = 0
+327 ^ 100 = OVERFLOW
+200 ^ 300 = OVERFLOW
+
+End: Testing mini_calculator2
+------------------------------
+

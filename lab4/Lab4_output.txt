@@ -1,0 +1,90 @@
+Case 1: Invalid array pointer:
+Error(find_match): NULL pointer
+first = NULL and last = NULL
+
+------------------------
+Case 2: Invalid array size
+Error(find_match): invalid size
+first = NULL and last = NULL
+
+------------------------
+Case 3: Item not found
+first = NULL and last = NULL
+
+------------------------
+Case 4: First item at start and last at the middle
+Looking for 12 in the array: {12, 19, 16, 18, 10, 12, 4, 19, 18}
+
+First item in the array starts at memory address: 0061FEF4
+Last item in the array starts at memory address: 0061FF14
+
+The first pointer points to value: 12 
+The last pointer points to value: 12
+
+First match is located at memory address: 0061FEF4
+Last match is located at memory address 0061FF08
+
+Index of first match is 0
+Index of last match is 5
+
+Value after first match is 19
+Value before last match is 10
+
+------------------------
+Case 5: First and last item at the middle
+Looking for 19 in the array: {12, 19, 16, 18, 10, 12, 4, 19, 18, 10}
+
+First item in the array starts at memory address: 0061FEF4
+Last item in the array starts at memory address: 0061FF18
+
+The first pointer points to value: 19 
+The last pointer points to value: 19
+
+First match is located at memory address: 0061FEF8
+Last match is located at memory address 0061FF10
+
+Index of first match is 1
+Index of last match is 7
+
+Value after first match is 16
+Value before last match is 4
+
+------------------------
+Case 6: First and last item is the same
+Looking for 16 in the array: {12, 19, 16, 18, 10, 12, 4, 19, 18, 10}
+
+First item in the array starts at memory address: 0061FEF4
+Last item in the array starts at memory address: 0061FF18
+
+The first pointer points to value: 16 
+The last pointer points to value: 16
+
+First match is located at memory address: 0061FEFC
+Last match is located at memory address 0061FEFC
+
+Index of first match is 2
+Index of last match is 2
+
+Value after first match is 18
+Value before last match is 19
+
+------------------------
+Case 7: First item at the middle and last at the end
+Looking for 10 in the array: {16, 18, 10, 12, 4, 19, 18, 10}
+
+First item in the array starts at memory address: 0061FEFC
+Last item in the array starts at memory address: 0061FF18
+
+The first pointer points to value: 10 
+The last pointer points to value: 10
+
+First match is located at memory address: 0061FF04
+Last match is located at memory address 0061FF18
+
+Index of first match is 2
+Index of last match is 7
+
+Value after first match is 12
+Value before last match is 18
+
+------------------------

@@ -1,0 +1,27 @@
+------------------------------
+Start: Testing Caesar Cipher:
+
+key = 3
+plaintext = abcdefghijklmnopqrstuvwxyz
+ciphertext= defghijklmnopqrstuvwxyzabc
+
+ciphertext = defghijklmnopqrstuvwxyzabc
+plaintext = abcdefghijklmnopqrstuvwxyz
+
+key = 3
+plaintext = Good morning
+ciphertext= Jrrg pruqlqj
+
+ciphertext = Jrrg pruqlqj
+plaintext = Good morning
+
+key = 4
+plaintext = Good morning
+ciphertext= Kssh qsvrmrk
+
+ciphertext = Kssh qsvrmrk
+plaintext = Good morning
+
+End: Testing Caesar Cipher
+------------------------------
+
